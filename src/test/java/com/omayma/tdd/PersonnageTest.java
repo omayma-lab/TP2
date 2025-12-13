@@ -11,6 +11,11 @@ public class PersonnageTest {
         Personnage p = new Personnage();
         assertEquals(Orientation.EST, p.tourner(1));
     }
+    @Test
+    public void quand_orientation_NORD_tourner_2_vers_SUD() {
+        Personnage p = new Personnage();
+        assertEquals(Orientation.SUD, p.tourner(2));
+    }
 
 }
 
