@@ -25,5 +25,10 @@ public class FizzBuzzTest {
 
         assertEquals("Buzz",FizzBuzz.de(5));
     }
+    @Test
+    void fizzBuzz_de_15_retourn_fizzbuzz(){
+
+        assertEquals("FizzBuzz",FizzBuzz.de(15));
+    }
 
 }
