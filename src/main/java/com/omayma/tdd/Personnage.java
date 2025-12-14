@@ -2,15 +2,7 @@ package com.omayma.tdd;
 
 public class Personnage {
     public Orientation tourner(int nbr) {
-        if(nbr>3) {
-            return Orientation.NORD;
-        }
-        else if(nbr>2) {
-            return Orientation.OUEST;
-        }
-        else if(nbr>1) {
-            return Orientation.SUD;
-        }
-        else return Orientation.EST;
+      int nbrmodulo= nbr % Orientation.values().length;
+      return Orientation.values()[nbrmodulo];
     }
 }
